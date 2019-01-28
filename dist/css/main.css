@@ -1,0 +1,248 @@
+body { 
+    font-family: Raleway , sans-serif;
+    text-align:center;
+    transition: all .75s;
+    
+}
+
+body , .middleEarthTheme{
+    background:url(../img/bg/middle-earth.png) top left no-repeat; background-attachment:fixed; 
+    background-size:100% 50%;
+    background-color: #222F37;
+}
+
+body , .theShireTheme{
+    background:url(../img/bg/the-shire.png) top left no-repeat; background-attachment:fixed; 
+    background-size:100% 50%;
+    background-color: #72A433;
+}
+
+body , .rivendellTheme{
+    background:url(../img/bg/rivendale.png) top left no-repeat; background-attachment:fixed; 
+    background-size:100% 50%;
+    background-color: #CFB662;
+}
+
+body , .mordorTheme{
+    background:url(../img/bg/mordor.png) top left no-repeat; background-attachment:fixed; 
+    background-size:100% 50%;
+    background-color: #33141A;
+}
+
+@media only screen and (max-width: 770px) {
+    #infoContainer {
+        height:30%;
+        min-height:30vh;
+        width:100%;
+        margin-bottom:15px;
+    }
+    #ipsumContainer{
+        height:50%;
+        min-height:50vh;
+        width:100%;
+        background:aliceblue;
+        padding:10px;
+    }
+    #worldContainer img {
+        max-width:25%;
+        max-height:25%;
+        -webkit-transition: all 0.75s ease;
+        transition: all 0.75s ease;
+        -webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+    }
+    #abtButton , #actionContainer {
+        display:none;
+    }
+    #creditContainer{
+        width:100%;
+        background: #4AB8A1;
+        color:darkslategrey;
+        font-style:oblique;
+        margin-top: 15px !important;
+        padding-top:15px !important;
+        padding-bottom:15px !important;
+    }
+  }
+
+  @media only screen and (min-width: 771px) {
+    #infoContainer {
+        height:80%;
+        min-height:80vh;
+        width:30%;
+    }
+    #ipsumContainer{
+        height:80%;
+        min-height:80vh;
+        width:65%;
+        background:aliceblue;
+        padding:10px;
+    }
+    #worldContainer img {
+        max-width:65%;
+        max-height:65%;
+        -webkit-transition: all 0.75s ease;
+        transition: all 0.75s ease;
+        -webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+    }
+    #worldContainer img:hover {
+        -webkit-transform: rotateY(180deg);
+        transform: rotateY(180deg);
+    }
+    #abtButton {
+        background: #4AB8A1;
+        width:100%;
+        height:50px;
+        transition: all .5s;
+    }
+    #abtButton:hover {
+        filter: brightness(85%);
+        width:100%;
+        height:50px;
+        letter-spacing:0.5rem;
+        font-weight: 1.5rem;
+    }
+    #socialContainer {
+        background:aliceblue;
+        width:100%;
+        height:75px;
+        display:flex;
+        justify-content: space-around;
+    }
+    .contactButton{
+        max-height:100%;
+        max-width:100%;
+        transition: all 0.25s;
+        align-self:center;
+    }
+    .contactButton:hover{
+        transform: scale(1.25);
+    }
+    #actionContainer {
+        width:100%;
+        padding:0px;
+        margin:0px;
+    }
+    #creditContainer{
+        width:100%;
+        background: #4AB8A1;
+        color:darkslategrey;
+        font-style:oblique;
+        margin-top: 15px !important;
+        padding-top:15px !important;
+        padding-bottom:15px !important;
+        display:none;
+    }
+  }
+
+h1 {
+    font-size: 4.5rem;
+    margin: 15px;
+    font-family: 'Bilbo' , cursive;
+    text-shadow: 0 0 1px #85080850, 0 0 2px #c4784650;
+    transition: all 1.5s;
+}
+h1:hover{
+    text-shadow: 0 0 4px #ffd30f90 , 0 0 16px #85080880, 0 0 24px #c4784670;
+}
+
+h2 {
+    font-size: 2rem;
+    margin:15px;
+}
+h3 {
+    font-size: 1.5rem;
+    margin:10px;
+}
+p {
+    font-weight: 200;
+}
+.lead {
+    font-weight:300;
+    letter-spacing: .05rem;
+    font-style: oblique;
+}
+.container {
+    max-width:1200px;
+    margin: 10px auto;
+    background: #33333350;
+}
+#themeContainer {
+    display: flex;
+    margin: 5px auto;
+    justify-content: space-around;
+}
+.theme {
+    height:80px;
+    width:200px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:5px;
+    transition: all 0.4s;
+    font-weight:300;
+    letter-spacing: .05rem;
+    color:whitesmoke;
+}
+.theme:hover{
+    filter: brightness(80%) !important;
+    letter-spacing: 0.1rem !important;
+}
+#middleEarthTheme {
+    background: #222F37;
+}
+#theShireTheme {
+    background: #324e10;
+}
+#rivendellTheme {
+    background: #79470f;
+}
+#mordorTheme {
+    background: #33141A;
+}
+.active {
+    font-size: 1.75rem !important;
+    background-color:palegoldenrod !important;
+    border-width: thick !important;
+    border-color: #0B1C2570 !important;
+    border-style: solid !important;
+    font-family: 'Dancing Script' , sans-serif;
+    color:darkslategrey;
+}
+#bottomContainer{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    padding:10px;
+}
+#tolkienContainer{
+    background: aliceblue;
+    padding:10px;
+}
+#worldContainer {
+    background: whitesmoke;
+    padding: 10px;
+}
+#abtContainer{
+    background: aliceblue;
+    padding:10px;
+}
+.ringText{
+    text-shadow: 0 0 2px #850808, 0 0 6px #c4784670;
+    font-family: 'Dancing Script' , sans-serif;
+    font-size:1.5rem;
+    transition: all 0.5s;
+}
+.ringText:hover{
+    text-shadow: 0 0 12px #853a08, 0 0 24px #a1030370;
+}
+.errorClass {
+    font-family: 'Bilbo' , cursive;
+    margin-top:15%;
+}
+.notFoundClass{
+    background:url(../img/bg/404.png) top left no-repeat; background-attachment:fixed; 
+    background-size:100% 75%;
+    background-color: #212425;
+}
